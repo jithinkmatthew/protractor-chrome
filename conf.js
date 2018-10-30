@@ -1,57 +1,5 @@
 let AllureReporter = require('jasmine-allure-reporter');
 let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-// const desiredEnv = require('./environment/env.json');
-// const page = require('./src/pages/basepage/BasePage');
-
-/* This function supply desired browser configuration in conf.js file  */
-// function configureCapability(capability) {
-//     if(capability === 'firefox') {
-//        return caps = {
-//             browserName: 'firefox',
-//             'moz:webdriverClick': false
-//        }
-//     } else if(capability === 'chrome') {
-//         return caps = {
-//             browserName: 'chrome',
-//             'goog:chromeOptions': {
-//                 args: [ "--start-maximized" ]
-//             }
-//        }
-//     } else if(capability === 'firefox-p') {
-//         return caps = {
-//             browserName: 'firefox',
-//             'moz:webdriverClick': false,
-//             maxInstances: 10,
-//             shardTestFiles: true
-//        }
-//     } else if(capability === 'chrome-p') {
-//         return caps = {
-//             browserName: 'chrome',
-//             chromeOptions: {
-//                 args: ['start-maximized']
-//             },
-//             maxInstances: 10,
-//             shardTestFiles: true
-//        }
-//     } else if(capability === 'firefox-h') {
-//         return caps = {
-//             browserName: 'firefox',
-//             'moz:webdriverClick': false,
-//             'moz:firefoxOptions': {
-//                 args: ["--headless"]
-//             }
-//        }
-//     } else if(capability === 'chrome-h') {
-//         return caps = {
-//             browserName: 'chrome',
-//             'goog:chromeOptions': {
-//                 args: [ "--headless" ]
-//             }
-//         }
-//     }
-// }
-
-// const cap = configureCapability(desiredEnv.browserConfig);
 
 exports.config = {
     
@@ -78,7 +26,9 @@ exports.config = {
 
     //restartBrowserBetweenTests: false,
 
-    /* Highlight elements before interaction */    
+    /* 
+     *  Highlight elements before interaction 
+     */    
     
     // highlightDelay: 100,
 
