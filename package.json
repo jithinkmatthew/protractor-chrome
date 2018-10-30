@@ -1,0 +1,36 @@
+{
+  "name": "protractor-chrome",
+  "version": "0.0.0",
+  "description": "protractor demo",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rm -rf allure-report",
+    "test": "protractor conf.js",
+    "posttest": "allure generate allure-results --clean -o allure-report || true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "babel-core": "^6.26.0",
+    "dom-parser": "^0.1.5",
+    "module-alias": "^2.1.0",
+    "protractor": "^5.2.2",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "requestretry": "^1.12.2",
+    "underscore": "^1.8.3",
+    "web-request": "^1.0.7",
+    "write-json-file": "^3.0.2"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.5.0",
+    "gulp": "^3.9.1",
+    "gulp-protractor": "^4.1.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-console-reporter": "^2.0.1",
+    "jasmine-data-provider": "^2.2.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor": "^5.2.1"
+  }
+}
