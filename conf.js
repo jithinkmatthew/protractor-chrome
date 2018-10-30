@@ -36,21 +36,24 @@ exports.config = {
     /* Mension all the spec files here. */
     specs: [
 
-        './src/tests/e2e/supporter-on-boarding/public-viral-link/onboarding.spec.js',
+        './option-d.spec.js',
 
     ],
 
     /* All the test suits should mensioned here. */
 
     suites: {
-        simulation: ['./src/tests/simulation/**/*spec.js']
+        suit1: ['./option-a.spec.js'],
+        suit2: ['./option-b.spec.js'],
+        suit3: ['./option-d.spec.js'],
+        suit4: ['./option-d.spec.js']
     },
     
     capabilities: {
         browserName: 'chrome',
-        chromeOptions: {
-            args: [ "--start-maximized" ]
-        }
+        // chromeOptions: {
+        //     args: [ "--start-maximized" ]
+        // }
     },
 
 
